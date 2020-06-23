@@ -31,7 +31,7 @@ module.exports = function (/* ctx */) {
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       // 'ionicons-v4',
-      // 'mdi-v5',
+      'mdi-v5',
       // 'fontawesome-v5',
       // 'eva-icons',
       // 'themify',
@@ -63,7 +63,7 @@ module.exports = function (/* ctx */) {
       // extractCSS: false,
 
       // https://quasar.dev/quasar-cli/handling-webpack
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
         cfg.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -182,7 +182,7 @@ module.exports = function (/* ctx */) {
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
       nodeIntegration: true,
 
-      extendWebpack (/* cfg */) {
+      extendWebpack(/* cfg */) {
         // do something with Electron main process Webpack cfg
         // chainWebpack also available besides this extendWebpack
       }
